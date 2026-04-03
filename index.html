@@ -1,0 +1,2377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wholesale & Bulk Terpenes — Loud Spectrum</title>
+  <meta name="description" content="Premium terpenes for brands, formulators, and manufacturers who demand volume without compromise. 3,500+ blends. Tiered pricing. Global shipping.">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <meta property="og:title" content="Wholesale & Bulk Terpenes — Loud Spectrum">
+  <meta property="og:description" content="Premium terpenes for brands, formulators, and manufacturers who demand volume without compromise. 3,500+ blends. Tiered pricing. Global shipping.">
+  <meta property="og:image" content="https://phpstack-281025-6294130.cloudwaysapps.com/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://phpstack-281025-6294130.cloudwaysapps.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://phpstack-281025-6294130.cloudwaysapps.com/og-image.jpg">
+  <link rel="icon" href="favicon.ico" sizes="48x48" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://esm.sh">
+  <link rel="preconnect" href="https://prod.spline.design">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/ysg7edw.css">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:    #07070A;
+      --surface:  #0F0F12;
+      --card:     #141418;
+      --border:   #242428;
+      --white:    #F4F3EF;
+      --muted:    #9A9AA6;
+      --faint:    #2A2A30;
+      --cyan:     rgb(0, 174, 239);
+      --purple:   rgb(102, 45, 145);
+      --alive:    #22c55e;
+      --dank:     #eab308;
+      --sweet:    #ec4899;
+      --classic:  #7c3aed;
+      --brand-grad: linear-gradient(to right, rgb(0, 174, 239), rgb(210, 50, 160));
+      --brand-grad-r: linear-gradient(to right, rgb(210, 50, 160), rgb(0, 174, 239));
+      --font-display: "adelphi-pe-variable", sans-serif;
+      --font-body:    'DM Sans', sans-serif;
+      --font-mono:    'DM Mono', monospace;
+      --radius: 3px;
+      --section-pad: clamp(80px, 10vw, 140px);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── NOISE TEXTURE OVERLAY ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.4;
+    }
+
+    /* ─── TYPOGRAPHY ─── */
+    .label {
+      font-family: var(--font-mono);
+      font-size: 14px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .label--gold {
+      background: var(--brand-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 300; line-height: 1.1; letter-spacing: -0.02em; font-variation-settings: "opsz" 6, "slnt" 0, "wght" 300; }
+
+    .display-xl {
+      font-size: clamp(28px, 4.4vw, 80px);
+      font-weight: 300;
+      letter-spacing: -0.04em;
+      line-height: 1.0;
+    }
+
+    .hero-span {
+      display: block;
+      font-size: clamp(18px, 2.6vw, 40px);
+      line-height: 1.3;
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.7s ease 0.5s forwards;
+    }
+    .display-lg {
+      font-size: clamp(40px, 5vw, 76px);
+      font-weight: 300;
+      letter-spacing: -0.015em;
+      line-height: 1.0;
+    }
+    .display-md {
+      font-size: clamp(36px, 4.6vw, 62px);
+      font-weight: 300;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-text {
+      background: var(--brand-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      padding-right: 0.25em;
+    }
+
+    /* ─── BUTTONS ─── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--brand-grad);
+      color: #fff;
+      padding: 15px 36px;
+      border-radius: 100px;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--brand-grad-r);
+      border-radius: inherit;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: -1;
+    }
+    .btn-primary:hover::after {
+      opacity: 1;
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 30px rgba(0,174,239,0.25);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--white);
+      padding: 15px 36px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 100px;
+      transition: border-color 0.35s ease, color 0.35s ease, transform 0.35s ease;
+    }
+    .btn-ghost:hover {
+      border-color: var(--cyan);
+      color: var(--cyan);
+      transform: translateY(-1px);
+    }
+    .btn:focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 3px;
+    }
+
+    /* ─── SKIP LINK ─── */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 16px;
+      z-index: 10000;
+      background: var(--cyan);
+      color: #000;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: 0 0 6px 6px;
+      text-decoration: none;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      transition: background 0.35s ease, border-color 0.35s ease;
+      border-bottom: 1px solid transparent;
+    }
+    nav.scrolled {
+      background: rgba(7,7,10,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom-color: var(--border);
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+    }
+    .nav-logo img {
+      height: 44px;
+      width: auto;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .nav-logo-sub {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      text-transform: uppercase;
+      display: block;
+      line-height: 1;
+      border-left: 1px solid var(--border);
+      padding-left: 16px;
+    }
+    nav .btn {
+      font-size: 13px;
+      padding: 13px 28px;
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 40px clamp(60px, 8vh, 100px);
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--black);
+      clip-path: inset(0);
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      top: -40%; left: 15%;
+      width: 950px; height: 950px;
+      background: conic-gradient(
+        from 180deg at 50% 50%,
+        rgba(124,58,237,0.12) 0deg,
+        rgba(236,72,153,0.08) 90deg,
+        rgba(234,179,8,0.07) 180deg,
+        rgba(34,197,94,0.09) 270deg,
+        rgba(0,174,239,0.10) 320deg,
+        rgba(124,58,237,0.12) 360deg
+      );
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+      animation: heroSpin 32s ease-in-out infinite;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      bottom: -30%; right: 15%;
+      width: 640px; height: 640px;
+      background: conic-gradient(
+        from 0deg at 50% 50%,
+        rgba(0,174,239,0.10) 0deg,
+        rgba(102,45,145,0.12) 120deg,
+        rgba(236,72,153,0.07) 240deg,
+        rgba(0,174,239,0.10) 360deg
+      );
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      animation: heroSpin 22s ease-in-out infinite reverse;
+    }
+    @keyframes heroSpin {
+      0%   { transform: rotate(0deg)   scale(1); }
+      25%  { transform: rotate(90deg)  scale(1.07); }
+      50%  { transform: rotate(180deg) scale(1); }
+      75%  { transform: rotate(270deg) scale(1.07); }
+      100% { transform: rotate(360deg) scale(1); }
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+    }
+
+    .hero-watermark {
+      position: absolute;
+      bottom: -2%;
+      left: -1%;
+      font-family: var(--font-display);
+      font-size: clamp(180px, 22vw, 340px);
+      font-weight: 300;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255,255,255,0.035);
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+      letter-spacing: -0.04em;
+      white-space: nowrap;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 70vw;
+    }
+    .hero-label {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.7s ease 0.2s forwards;
+    }
+    .hero-label::before {
+      content: '';
+      width: 40px;
+      height: 1px;
+      background: var(--brand-grad);
+    }
+    .hero-headline {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s ease 0.4s forwards;
+      margin-bottom: 28px;
+      max-width: 70vw;
+    }
+    .hero-headline em {
+      font-style: italic;
+    }
+    .hero-sub {
+      font-size: clamp(16px, 1.5vw, 20px);
+      font-weight: 300;
+      color: rgba(244,243,239,0.82);
+      max-width: 38vw;
+      line-height: 1.7;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.7s ease 0.6s forwards;
+      margin-bottom: 40px;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.7s ease 0.8s forwards;
+    }
+    @keyframes orb-pulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.85; }
+    }
+    .hero-orb {
+      position: absolute;
+      right: -4%;
+      top: 0;
+      width: 55%;
+      height: 100%;
+      pointer-events: auto;
+      overflow: hidden;
+      clip-path: inset(0 4% 0 0);
+      mix-blend-mode: screen;
+      filter: saturate(1.2);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 18%, black 88%, transparent 100%);
+      mask-image: linear-gradient(to right, transparent 0%, black 18%, black 88%, transparent 100%);
+    }
+    .hero-orb::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 80% at 62% 50%, rgba(139, 92, 246, 0.6) 0%, rgba(109, 40, 217, 0.25) 40%, transparent 70%);
+      animation: orb-pulse 2.5s ease-in-out infinite;
+      transition: opacity 0.8s ease;
+      z-index: 0;
+    }
+    .hero-orb.loaded::before {
+      opacity: 0;
+    }
+    .hero-orb canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transform: scale(1.4) translateX(-18%) translateY(0%);
+      transform-origin: center center;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      right: 40px;
+      bottom: clamp(40px, 5vh, 60px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      animation: fadeIn 1s ease 1.4s forwards;
+    }
+    .hero-scroll span {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+    }
+    .hero-scroll-line {
+      width: 1px;
+      height: 60px;
+      background: linear-gradient(to bottom, var(--cyan), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+
+    /* ─── STRIP ─── */
+    .strip {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 18px 40px;
+      overflow: hidden;
+    }
+    .strip-inner {
+      display: flex;
+      gap: 60px;
+      animation: marquee 30s linear infinite;
+      white-space: nowrap;
+      width: max-content;
+    }
+    .strip-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .strip-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--cyan);
+      flex-shrink: 0;
+    }
+
+    /* ─── STATS ─── */
+    #stats {
+      padding: var(--section-pad) 40px;
+      position: relative;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .stat-cell {
+      background: var(--black);
+      padding: 48px 40px;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.35s ease;
+    }
+    .stat-cell::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--brand-grad);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.35s ease;
+    }
+    .stat-cell:hover { background: var(--surface); }
+    .stat-cell:hover::after { transform: scaleX(1); }
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: clamp(42px, 4.5vw, 70px);
+      font-weight: 300;
+      height: clamp(52px, 5.5vw, 86px);
+      display: flex;
+      align-items: center;
+      line-height: 1;
+      margin-bottom: 8px;
+      background: var(--brand-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-label {
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(244,243,239,0.85);
+      margin-bottom: 8px;
+    }
+    .stat-sub {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+
+    /* ─── SECTION HEADER ─── */
+    .section-header {
+      max-width: 1200px;
+      margin: 0 auto 64px;
+    }
+    .section-header .label { margin-bottom: 20px; display: block; }
+    .section-header p {
+      font-size: clamp(15px, 1.3vw, 18px);
+      color: rgba(244,243,239,0.75);
+      line-height: 1.7;
+      margin-top: 16px;
+    }
+
+    /* ─── WHO WE SERVE ─── */
+    #serve {
+      padding: var(--section-pad) 40px;
+      background: #111921;
+      border-top: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .serve-bg-paths {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .serve-paths-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .serve-bg-paths + .section-header,
+    .serve-bg-paths ~ .serve-grid {
+      position: relative;
+      z-index: 1;
+    }
+    @keyframes bgPathFlow {
+      from { stroke-dashoffset: 2000; }
+      to   { stroke-dashoffset: -2000; }
+    }
+    @keyframes bgPathPulse {
+      0%, 100% { stroke-opacity: 0.03; }
+      50%      { stroke-opacity: 0.10; }
+    }
+    .serve-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .serve-card {
+      border: 1px solid var(--border);
+      padding: 48px 36px;
+      background: var(--black);
+      border-radius: var(--radius);
+      cursor: default;
+      position: relative;
+    }
+    .serve-card,
+    .serve-card.reveal,
+    .serve-card.reveal.visible {
+      transition: border-color 0.35s ease, transform 0.35s ease, opacity 0.7s ease;
+    }
+    .serve-card:hover {
+      transform: translateY(-4px);
+    }
+
+    /* ── GLOWING BORDER EFFECT ── */
+    .glow-wrapper {
+      pointer-events: none;
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+    }
+    .glow-inner {
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+    }
+    .glow-inner::after {
+      content: '';
+      border-radius: inherit;
+      position: absolute;
+      inset: calc(-1 * var(--glow-border-width, 3px));
+      border: var(--glow-border-width, 3px) solid transparent;
+      background:
+        radial-gradient(circle, #F0D268 10%, #F0D26800 20%),
+        radial-gradient(circle at 40% 40%, #C8962C 5%, #C8962C00 15%),
+        radial-gradient(circle at 60% 60%, #00AEEF 10%, #00AEEF00 20%),
+        radial-gradient(circle at 40% 60%, #C8962C 10%, #C8962C00 20%),
+        repeating-conic-gradient(
+          from 236.84deg at 50% 50%,
+          #F0D268 0%,
+          #C8962C calc(25% / 5),
+          #00AEEF calc(50% / 5),
+          #C8962C calc(75% / 5),
+          #F0D268 calc(100% / 5)
+        );
+      background-attachment: fixed;
+      opacity: var(--active, 0);
+      transition: opacity 0.3s ease;
+      -webkit-mask-clip: padding-box, border-box;
+      mask-clip: padding-box, border-box;
+      -webkit-mask-composite: destination-in;
+      mask-composite: intersect;
+      -webkit-mask-image:
+        linear-gradient(#0000, #0000),
+        conic-gradient(
+          from calc((var(--start, 0) - var(--glow-spread, 40)) * 1deg),
+          #00000000 0deg,
+          #fff,
+          #00000000 calc(var(--glow-spread, 40) * 2deg)
+        );
+      mask-image:
+        linear-gradient(#0000, #0000),
+        conic-gradient(
+          from calc((var(--start, 0) - var(--glow-spread, 40)) * 1deg),
+          #00000000 0deg,
+          #fff,
+          #00000000 calc(var(--glow-spread, 40) * 2deg)
+        );
+    }
+    .serve-icon {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 20px;
+      opacity: 0.85;
+    }
+    .serve-card h3 {
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 300;
+      margin-bottom: 10px;
+      color: var(--white);
+    }
+    .serve-card p {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ─── LINES ─── */
+    #lines {
+      padding: var(--section-pad) 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .lines-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .line-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      position: relative;
+      border-radius: var(--radius);
+      transition: transform 0.35s ease, border-color 0.35s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .line-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--faint);
+    }
+    .line-card:hover .line-header {
+      opacity: 1;
+    }
+    .line-header {
+      padding: 32px 28px 24px;
+      opacity: 0.9;
+      transition: opacity 0.35s ease;
+      border-radius: var(--radius) var(--radius) 0 0;
+      overflow: hidden;
+      flex: 1;
+    }
+    .line-tag {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .line-name {
+      font-family: var(--font-display);
+      font-size: 46px;
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .line-desc {
+      font-size: 16px;
+      color: rgba(244,243,239,0.72);
+      line-height: 1.6;
+    }
+    .line-footer {
+      padding: 18px 28px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .line-sku {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .line-arrow {
+      width: 16px;
+      height: 16px;
+      color: var(--muted);
+      transition: color 0.35s ease, transform 0.35s ease;
+    }
+    .line-card:hover .line-arrow {
+      color: var(--cyan);
+      transform: translate(2px, -2px);
+    }
+
+    /* Line color themes */
+    .line-alive  .line-header { background: linear-gradient(135deg, #0b1a10 0%, #060e08 100%); }
+    .line-alive  .line-name   { color: var(--alive); }
+    .line-alive  .line-tag    { color: #16a34a; }
+
+    .line-dank   .line-header { background: linear-gradient(135deg, #1a1505 0%, #0e0d03 100%); }
+    .line-dank   .line-name   { color: var(--dank); }
+    .line-dank   .line-tag    { color: #ca8a04; }
+
+    .line-sweet  .line-header { background: linear-gradient(135deg, #1a0711 0%, #0e050b 100%); }
+    .line-sweet  .line-name   { color: var(--sweet); }
+    .line-sweet  .line-tag    { color: #db2777; }
+
+    .line-classic .line-header { background: linear-gradient(135deg, #0e0b1c 0%, #08060f 100%); }
+    .line-classic .line-name   { color: var(--classic); }
+    .line-classic .line-tag    { color: #6d28d9; }
+
+    .line-custom-heading {
+      grid-column: 1 / -1;
+      padding-top: 64px;
+      margin-bottom: 24px;
+    }
+    .line-custom-heading h2 {
+      margin-bottom: 12px;
+    }
+    .line-custom-title {
+      font-size: clamp(26px, 3vw, 42px);
+      font-weight: 300;
+      background: linear-gradient(to right, var(--alive), var(--dank), var(--sweet), var(--classic));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .line-custom {
+      grid-column: 1 / -1;
+    }
+    .line-custom .line-header {
+      background: linear-gradient(135deg, #0b1a10 0%, #1a1505 33%, #1a0711 66%, #0e0b1c 100%);
+    }
+    .line-custom .line-tag {
+      background: linear-gradient(to right, #16a34a, #ca8a04, #db2777, #6d28d9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ─── WHY ─── */
+    #why {
+      padding: var(--section-pad) 40px;
+      background: #111921;
+      border-top: 1px solid var(--border);
+    }
+    .why-product-image {
+      max-width: 1200px;
+      margin: 0 auto 72px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .why-product-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .why-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    .why-visual {
+      position: relative;
+    }
+    .why-big-number {
+      font-family: var(--font-display);
+      font-size: clamp(100px, 14vw, 200px);
+      font-weight: 300;
+      line-height: 1;
+      background: var(--brand-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      opacity: 0.15;
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      pointer-events: none;
+    }
+    .why-features {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      position: relative;
+    }
+    .why-feature {
+      display: flex;
+      gap: 20px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+    .why-feature:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .why-num {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--cyan);
+      flex-shrink: 0;
+      padding-top: 3px;
+      letter-spacing: 0.1em;
+    }
+    .why-feature h3 {
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+    .why-feature p {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .why-right {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .why-card {
+      background: var(--black);
+      border: 1px solid var(--border);
+      position: relative;
+      border-radius: var(--radius);
+      padding: 28px 32px;
+    }
+    .why-card-label {
+      font-family: var(--font-mono);
+      font-size: 14px;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .why-card-value {
+      font-family: var(--font-display);
+      font-size: 38px;
+      font-weight: 300;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .why-card-sub {
+      font-size: 16px;
+      color: var(--muted);
+    }
+    .why-card-accent {
+      border-left: 2px solid var(--cyan);
+      background: rgba(0,174,239,0.04);
+    }
+
+    /* ─── FORM ─── */
+    #form {
+      padding: var(--section-pad) 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .form-bg-text {
+      position: absolute;
+      right: -2%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: var(--font-display);
+      font-size: clamp(120px, 16vw, 240px);
+      font-weight: 300;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255,255,255,0.025);
+      pointer-events: none;
+      user-select: none;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .form-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: start;
+      position: relative;
+      z-index: 2;
+    }
+    .form-left {}
+    .form-left .label { margin-bottom: 20px; display: block; }
+    .form-left h2 {
+      margin-bottom: 20px;
+    }
+    .form-left .form-sub {
+      font-size: 16px;
+      color: rgba(244,243,239,0.72);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .form-perks {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .form-perk {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 16px;
+      color: rgba(244,243,239,0.82);
+    }
+    .perk-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--brand-grad);
+      flex-shrink: 0;
+    }
+
+    form {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 48px 40px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .form-group.full { grid-column: 1 / -1; }
+
+    label {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    input, select, textarea {
+      background: var(--black);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 16px;
+      padding: 13px 16px;
+      outline: none;
+      transition: border-color 0.35s ease, box-shadow 0.35s ease;
+      width: 100%;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+    input::placeholder, textarea::placeholder {
+      color: var(--faint);
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--cyan);
+      box-shadow: 0 0 0 3px rgba(0,174,239,0.08);
+    }
+    select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B6B72' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 40px;
+    }
+    select option { background: var(--surface); }
+    textarea { resize: vertical; min-height: 100px; }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: rgba(244,243,239,0.82);
+      cursor: pointer;
+      text-transform: scale(1.8) translateX(-23%) translateY(20%);
+      letter-spacing: 0;
+    }
+    .checkbox-label input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      padding: 0;
+      cursor: pointer;
+      accent-color: var(--cyan);
+      flex-shrink: 0;
+    }
+
+    .form-submit {
+      margin-top: 8px;
+    }
+    .form-submit .btn {
+      width: 100%;
+      justify-content: center;
+      padding: 17px;
+    }
+    .form-note {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 14px;
+      letter-spacing: 0.06em;
+    }
+
+    /* ─── SUCCESS MESSAGE ─── */
+    .form-success {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 40px;
+      gap: 20px;
+    }
+    .form-success.visible { display: flex; }
+    .success-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(0,174,239,0.1);
+      border: 1px solid var(--cyan);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-success h3 {
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 300;
+    }
+    .form-success p {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 300px;
+      line-height: 1.7;
+    }
+
+    /* ─── TESTIMONIALS ─── */
+    .testimonials {
+      padding: 120px 40px;
+      background: #111921;
+      border-top: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .testimonial-card {
+      position: relative;
+      background: var(--black);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      transition: border-color 0.35s ease, transform 0.35s ease;
+    }
+    .testimonial-card:hover {
+      border-color: rgba(200,150,44,0.35);
+      transform: translateY(-3px);
+    }
+    .testimonial-card.featured {
+      border-color: rgba(200,150,44,0.2);
+    }
+    .testimonial-stars {
+      display: flex;
+      gap: 3px;
+    }
+    .testimonial-stars span {
+      display: inline-block;
+      background: var(--brand-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 14px;
+      line-height: 1;
+    }
+    .testimonial-quote {
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(245,245,245,0.82);
+      flex: 1;
+    }
+    .testimonial-author {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .testimonial-name {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+    .testimonial-company {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--brand-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ─── FAQ ─── */
+    .faqs {
+      padding: var(--section-pad) 40px;
+      background: var(--black);
+      border-top: 1px solid var(--border);
+    }
+    .faq-list {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item:first-child {
+      border-top: 1px solid var(--border);
+    }
+    .faq-q {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 26px 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      font-family: var(--font-sans);
+      font-size: clamp(15px, 1.1vw, 18px);
+      color: var(--text);
+      font-weight: 500;
+      gap: 24px;
+      transition: color 0.3s ease;
+    }
+    .faq-q:hover { color: rgba(245,245,245,0.7); }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 1;
+      color: var(--muted);
+      transition: transform 0.35s ease, border-color 0.35s ease, color 0.35s ease;
+      font-weight: 300;
+    }
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+      border-color: #C8962C;
+      color: #C8962C;
+    }
+    .faq-a {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.45s ease;
+    }
+    .faq-item.open .faq-a {
+      max-height: 400px;
+    }
+    .faq-a p {
+      font-family: var(--font-mono);
+      font-size: 15px;
+      line-height: 1.9;
+      color: rgba(245,245,245,0.6);
+      max-width: 680px;
+      padding-bottom: 28px;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+      background: var(--black);
+    }
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-brand img {
+      height: 56px;
+      width: auto;
+      display: block;
+      opacity: 0.9;
+    }
+    .footer-tagline {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .footer-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+    .footer-links a {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.35s ease;
+    }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    @keyframes marquee {
+      to { transform: translateX(-50%); }
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; transform: scaleY(1); }
+      50%       { opacity: 1;   transform: scaleY(1.1); }
+    }
+    @keyframes shimmer {
+      0%   { background-position: -200% center; }
+      100% { background-position:  200% center; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-height: 700px) {
+      #hero { padding-top: 80px; }
+    }
+
+    @media (max-width: 1024px) {
+      #hero { padding-top: 80px; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .lines-grid { grid-template-columns: repeat(2, 1fr); }
+      .line-custom { grid-column: 1 / -1; }
+      .why-layout { grid-template-columns: 1fr; gap: 48px; }
+      .why-big-number { display: none; }
+      .form-layout { grid-template-columns: 1fr; gap: 48px; }
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 16px 24px; }
+      .nav-logo-sub { display: none; }
+      nav .btn { display: none; }
+      .serve-bg-paths { display: none; }
+      .hero-actions .btn { font-size: 13px; padding: 12px 20px; }
+
+      .display-xl { font-size: clamp(26px, 5.5vw, 54px); }
+      .hero-span { font-size: clamp(14px, 2.8vw, 28px); }
+      .display-md { font-size: clamp(26px, 6vw, 42px); }
+      .hero-content { max-width: 100%; }
+      .hero-headline { max-width: 100%; }
+      .hero-sub { max-width: 100%; font-size: 15px; }
+      .hero-actions { flex-wrap: wrap; gap: 12px; }
+      .hero-scroll { display: none; }
+      .hero-bg::after { display: none; }
+      .hero-orb {
+        width: 100%;
+        height: 45vh;
+        top: 0;
+        right: 0;
+        left: 0;
+        overflow: hidden;
+        clip-path: inset(0);
+        -webkit-mask-image: radial-gradient(ellipse 90% 80% at 60% 50%, black 20%, transparent 75%);
+        mask-image: radial-gradient(ellipse 90% 80% at 60% 50%, black 20%, transparent 75%);
+      }
+      .hero-orb canvas {
+        transform: scale(1.8) translateX(-23%) translateY(20%);
+        max-width: 100%;
+      }
+
+      #hero, #stats, #serve, #lines, #why, #form,
+      .testimonials, .faqs { padding-left: 24px; padding-right: 24px; }
+      .section-header { margin-bottom: 40px; }
+
+      .serve-grid { grid-template-columns: repeat(2, 1fr); }
+      .lines-grid { grid-template-columns: 1fr; }
+      .line-custom { grid-column: auto; }
+      .why-cards { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .testimonial-card { padding: 24px 20px; }
+
+      .form-row { grid-template-columns: 1fr; }
+      .checkbox-group { grid-template-columns: 1fr; }
+      form { padding: 32px 24px; }
+
+      footer { flex-direction: column; gap: 24px; padding: 40px 24px; align-items: center; text-align: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; gap: 20px; }
+      .footer-logo { align-items: center; }
+    }
+
+    @media (max-width: 480px) {
+      .display-xl { font-size: clamp(28px, 9vw, 42px); }
+      .hero-span { font-size: clamp(13px, 4.5vw, 22px); }
+      .display-md { font-size: clamp(22px, 7vw, 30px); }
+
+      #hero, #stats, #serve, #lines, #why, #form,
+      .testimonials, .faqs { padding-left: 20px; padding-right: 20px; }
+
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .serve-grid { grid-template-columns: 1fr; }
+      .why-cards { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .hero-actions .btn { width: 100%; text-align: center; justify-content: center; }
+      footer { flex-direction: column; align-items: center; text-align: center; padding: 40px 20px; gap: 32px; }
+      .footer-links { flex-wrap: wrap; justify-content: center; gap: 20px; }
+    }
+
+    /* ─── FAQ FOCUS ─── */
+    .faq-q:focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    /* ─── REDUCED MOTION ─── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+      .hero-text > *, .hero-actions, .hero-span {
+        opacity: 1;
+        transform: none;
+        animation: none;
+      }
+      .orb-inner, .orb-outer {
+        animation: none;
+      }
+    }
+
+    /* ─── WHITE SECTIONS VARIANT ─── */
+
+    /* Why section — white background */
+    #why {
+      background: #ffffff;
+      border-top: 1px solid rgba(17,25,33,0.1);
+    }
+    #why .section-header .display-md,
+    .testimonials .section-header .display-md {
+      color: #111921;
+    }
+    #why .section-header p,
+    #why .section-header .label {
+      color: rgba(17,25,33,0.6);
+    }
+    .why-feature {
+      border-bottom-color: rgba(17,25,33,0.12);
+    }
+    .why-feature h3 {
+      color: #111921;
+    }
+    .why-feature p {
+      color: rgba(17,25,33,0.62);
+    }
+    .why-card {
+      background: #f4f3ef;
+      border-color: rgba(17,25,33,0.1);
+    }
+    .why-card-label {
+      color: rgba(17,25,33,0.5);
+    }
+    .why-card-value {
+      color: #111921;
+    }
+    .why-card-sub {
+      color: rgba(17,25,33,0.6);
+    }
+    .why-card-accent {
+      background: rgba(0,174,239,0.06);
+      border-left-color: var(--cyan);
+    }
+    .why-card:hover {
+      border-color: rgba(17,25,33,0.2);
+    }
+
+    /* Testimonials section — white background */
+    .testimonials {
+      background: #ffffff;
+      border-top: 1px solid rgba(17,25,33,0.1);
+    }
+    .testimonials .section-header p,
+    .testimonials .section-header .label {
+      color: rgba(17,25,33,0.6);
+    }
+    .testimonial-card {
+      background: #f4f3ef;
+      border-color: rgba(17,25,33,0.1);
+    }
+    .testimonial-card:hover {
+      border-color: rgba(17,25,33,0.25);
+    }
+    .testimonial-card.featured {
+      border-color: rgba(17,25,33,0.15);
+    }
+    .testimonial-quote {
+      color: rgba(17,25,33,0.72);
+    }
+    .testimonial-author {
+      border-top-color: rgba(17,25,33,0.1);
+    }
+    .testimonial-name {
+      color: #111921;
+    }
+
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ─── NAV ─── -->
+  <nav id="nav">
+    <a href="https://loudspectrum.com" class="nav-logo">
+      <img src="logo-light.svg" alt="Loud Spectrum">
+      <span class="nav-logo-sub">Wholesale</span>
+    </a>
+    <a href="#form" class="btn btn-primary">Apply for Wholesale</a>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-watermark">TERPENES</div>
+
+    <div class="hero-content">
+      <div class="hero-label">
+        <span class="label label--gold">Wholesale &amp; Bulk Terpenes</span>
+      </div>
+      <h1 class="display-xl hero-headline">
+       Craft Products Your Competitors<br>Only Wish They Made. 
+      </h1>
+       <span class="hero-span"><em class="brand-text">Give your customers a terpene experience<br>they'll keep coming back for.</em>
+      </span>
+      <p class="hero-sub">
+        Premium terpenes for brands, formulators, and manufacturers who demand volume without compromise. 3,500+ blends. Tiered pricing. Global shipping.
+      </p>
+      <div class="hero-actions">
+        <a href="#form" class="btn btn-primary">
+          Apply for Wholesale Access
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="tel:8665183777" class="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style="margin-right:6px;flex-shrink:0"><path d="M2 2.5C2 2 2.5 1 3.5 1S5 1.5 5.5 3c.3.8.1 1.5-.5 2L4.5 5.5C5.2 7 7 8.8 8.5 9.5l.5-.5c.5-.6 1.2-.8 2-.5C12.5 9 13 9.8 13 10.5S12 12 11.5 12C6 12 2 8 2 2.5Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Call Us</a>
+      </div>
+    </div>
+
+    <div class="hero-orb" aria-hidden="true">
+      <canvas id="hero-orb-canvas"></canvas>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE STRIP ─── -->
+  <div class="strip">
+    <div class="strip-inner">
+      <div class="strip-item"><div class="strip-dot"></div>3,500+ Unique blends</div>
+      <div class="strip-item"><div class="strip-dot"></div>Tiered Volume Pricing</div>
+      <div class="strip-item"><div class="strip-dot"></div>Global Shipping</div>
+      <div class="strip-item"><div class="strip-dot"></div>White Label Solutions</div>
+      <div class="strip-item"><div class="strip-dot"></div>COA on Every Batch</div>
+      <div class="strip-item"><div class="strip-dot"></div>Technical Formulation Support</div>
+      <div class="strip-item"><div class="strip-dot"></div>1–2 Day Approval</div>
+      <div class="strip-item"><div class="strip-dot"></div>Custom Blends Available</div>
+      <!-- duplicate for seamless loop -->
+      <div class="strip-item"><div class="strip-dot"></div>3,500+ Unique blends</div>
+      <div class="strip-item"><div class="strip-dot"></div>Tiered Volume Pricing</div>
+      <div class="strip-item"><div class="strip-dot"></div>Global Shipping</div>
+      <div class="strip-item"><div class="strip-dot"></div>White Label Solutions</div>
+      <div class="strip-item"><div class="strip-dot"></div>COA on Every Batch</div>
+      <div class="strip-item"><div class="strip-dot"></div>Technical Formulation Support</div>
+      <div class="strip-item"><div class="strip-dot"></div>1–2 Day Approval</div>
+      <div class="strip-item"><div class="strip-dot"></div>Custom Blends Available</div>
+    </div>
+  </div>
+
+  <!-- ─── STATS ─── -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-cell reveal">
+        <div class="stat-number" data-target="3500" data-suffix="+">0</div>
+        <div class="stat-label">Signature Blends Crafted</div>
+        <div class="stat-sub">Bespoke formulation library</div>
+      </div>
+      <div class="stat-cell reveal reveal-delay-1">
+        <div class="stat-number" data-target="1000000" data-suffix="+" data-infinite="true">0</div>
+        <div class="stat-label">Unique Terpene Formulation Options</div>
+        <div class="stat-sub">Endless Possibilities</div>
+      </div>
+      <div class="stat-cell reveal reveal-delay-2">
+        <div class="stat-number" data-target="48" data-suffix="hr">0</div>
+        <div class="stat-label">Average Turnaround</div>
+        <div class="stat-sub">From order to ship-ready</div>
+      </div>
+      <div class="stat-cell reveal reveal-delay-3">
+        <div class="stat-number" data-target="100" data-suffix="%">0</div>
+        <div class="stat-label">COA Certified</div>
+        <div class="stat-sub">Third-party lab verified</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHO WE SERVE ─── -->
+  <section id="serve">
+    <div class="serve-bg-paths" aria-hidden="true">
+      <svg id="serve-svg-1" class="serve-paths-svg" viewBox="0 0 696 316" fill="none" preserveAspectRatio="xMidYMid slice"></svg>
+      <svg id="serve-svg-2" class="serve-paths-svg" viewBox="0 0 696 316" fill="none" preserveAspectRatio="xMidYMid slice"></svg>
+    </div>
+    <div class="section-header reveal">
+      <span class="label">Applications</span>
+      <h2 class="display-md">Precision Formulated<br><em class="brand-text">To Meet The Needs of Your Product.</em></h2>
+      <p>Loud Spectrum develops terpenes for superior performance across a variety of applications. Each application presents unique formulation challenges around volatility, solubility, temperature, dispersion, and stability. Our lab understands these constraints and delivers solutions tailored to your product needs.</p>
+    </div>
+    <div class="serve-grid">
+      <div class="serve-card reveal">
+        <svg class="serve-icon" viewBox="0 0 42 42" fill="none">
+          <path d="M14 34 C10 30 18 26 14 22 C10 18 18 14 14 10" stroke="rgb(0,174,239)" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+          <path d="M21 34 C25 30 17 26 21 22 C25 18 17 14 21 10" stroke="rgb(102,45,145)" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+          <path d="M28 34 C24 30 32 26 28 22 C24 18 32 14 28 10" stroke="rgb(0,174,239)" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+        </svg>
+        <h3>Distillate</h3>
+        <p>Precision-tested terpene blends crafted to deliver a clean, consistent, flower-like experience every time.</p>
+      </div>
+      <div class="serve-card reveal reveal-delay-1">
+        <svg class="serve-icon" viewBox="0 0 42 42" fill="none">
+          <circle cx="15" cy="9" r="3" stroke="rgb(0,174,239)" stroke-width="1.2"/>
+          <circle cx="27" cy="9" r="3" stroke="rgb(0,174,239)" stroke-width="1.2"/>
+          <circle cx="21" cy="15" r="6.5" stroke="rgb(0,174,239)" stroke-width="1.2"/>
+          <ellipse cx="21" cy="27" rx="8" ry="9" stroke="rgb(0,174,239)" stroke-width="1.2"/>
+          <circle cx="13" cy="30" r="3.5" stroke="rgb(102,45,145)" stroke-width="1.2"/>
+          <circle cx="29" cy="30" r="3.5" stroke="rgb(102,45,145)" stroke-width="1.2"/>
+          <circle cx="16" cy="37" r="3" stroke="rgb(102,45,145)" stroke-width="1.2"/>
+          <circle cx="26" cy="37" r="3" stroke="rgb(102,45,145)" stroke-width="1.2"/>
+        </svg>
+        <h3>Gummies</h3>
+        <p>Expertly timed terpene infusion delivers consistent flavor, aroma, and entourage effect in every gummy.</p>
+      </div>
+      <div class="serve-card reveal reveal-delay-2">
+        <svg class="serve-icon" viewBox="0 0 42 42" fill="none">
+          <path d="M11 8 H31 L28 34 Q27 36 21 36 Q15 36 14 34 Z" stroke="rgb(0,174,239)" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M13.2 20 L28.8 20" stroke="rgb(0,174,239)" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+          <path d="M26 36 L29 5" stroke="rgb(102,45,145)" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="18" cy="27" r="1.3" stroke="rgb(102,45,145)" stroke-width="1"/>
+          <circle cx="22" cy="23" r="1" stroke="rgb(102,45,145)" stroke-width="1"/>
+          <circle cx="17" cy="31" r="0.9" stroke="rgb(102,45,145)" stroke-width="1"/>
+        </svg>
+        <h3>Beverages</h3>
+        <p>Properly emulsified terpenes deliver layered, aromatic flavor and entourage effect in every sip.</p>
+      </div>
+      <div class="serve-card reveal reveal-delay-3">
+        <svg class="serve-icon" viewBox="0 0 42 42" fill="none">
+          <path d="M29 5 Q37 6 37 13 L10 37 Q6 37 7 33 Z" stroke="rgb(0,174,239)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
+          <ellipse cx="33" cy="9" rx="3.5" ry="2.5" transform="rotate(-45 33 9)" stroke="rgb(102,45,145)" stroke-width="1.2"/>
+          <path d="M28 8 L11 34" stroke="rgb(0,174,239)" stroke-width="0.8" stroke-linecap="round" opacity="0.5"/>
+          <path d="M7 33 C5 35 4 37 6 38" stroke="rgb(102,45,145)" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+        </svg>
+        <h3>Infused</h3>
+        <p>Loud Spectrum terpenes bring back the nose, flavor, and effect your flower deserves.</p>
+      </div>
+      <div class="serve-card reveal">
+        <svg class="serve-icon" viewBox="0 0 42 42" fill="none">
+          <rect x="12" y="17" width="18" height="21" rx="5" stroke="rgb(0,174,239)" stroke-width="1.2"/>
+          <path d="M17 17 V13 H15 V9 H27 V13 H25 V17" stroke="rgb(0,174,239)" stroke-width="1.2" stroke-linejoin="round"/>
+          <line x1="21" y1="9" x2="21" y2="5" stroke="rgb(102,45,145)" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="21" cy="4" r="2.5" stroke="rgb(102,45,145)" stroke-width="1.2"/>
+          <path d="M21 23 Q18 28 21 33 Q24 28 21 23Z" stroke="rgb(102,45,145)" stroke-width="1" stroke-linejoin="round"/>
+        </svg>
+        <h3>Tinctures</h3>
+        <p>Elevate your tincture with terpenes crafted for consistent flavor, aroma, and shelf-stable performance.</p>
+      </div>
+      <div class="serve-card reveal reveal-delay-1">
+        <svg class="serve-icon" viewBox="0 0 42 42" fill="none">
+          <rect x="7" y="26" width="28" height="13" rx="2" stroke="rgb(0,174,239)" stroke-width="1.2"/>
+          <rect x="6" y="23" width="30" height="4" rx="1" stroke="rgb(0,174,239)" stroke-width="1.2"/>
+          <ellipse cx="21" cy="23" rx="15" ry="3.5" stroke="rgb(0,174,239)" stroke-width="1.2"/>
+          <path d="M9 20 Q13 13 18 17 Q23 21 27 13 Q29 8 28 6 Q30 10 35 20" stroke="rgb(102,45,145)" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        </svg>
+        <h3>Topicals</h3>
+        <p>Carefully formulated terpenes enhance balms, creams, and lotions with natural aroma and dermal compatibility.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top: 48px;">
+      <a href="#form" class="btn btn-primary">Tell us About Your Product <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </section>
+
+  <!-- ─── PRODUCT LINES ─── -->
+  <section id="lines">
+    <div class="section-header reveal">
+      <span class="label">Product Lines</span>
+      <h2 class="display-md">Thousands of Blends.<br><em class="brand-text">Endless Possibilities.</em></h2>
+      <p>Our four product lines offer one of the most extensive libraries of terpenes for sale in the industry. Whether you’re looking for the purity of true-to-plant or the versatility of one of our botanical lines, every Terpene is crafted to maximize the impact of aroma, flavor and effect across applications.</p>
+      <p>Every line is available in bulk quantities with volume-tiered pricing. Mix and match across lines to build your ideal formulation stack.</p>
+    </div>
+    <div class="lines-grid">
+
+      <div class="line-card line-alive reveal">
+        <div class="line-header">
+          <span class="line-tag">Line 01</span>
+          <div class="line-name">Alive</div>
+          <p class="line-desc">Premium true-to-plant terpenes. Highest level of fidelity for the most authentic aroma, flavor, and effect available.</p>
+        </div>
+        <div class="line-footer">
+          <span class="line-sku">True-to-Plant · Bulk Available</span>
+        </div>
+      </div>
+
+      <div class="line-card line-dank reveal reveal-delay-1">
+        <div class="line-header">
+          <span class="line-tag">Line 02</span>
+          <div class="line-name">Dank</div>
+          <p class="line-desc">Highly pungent, gassy blends, engineered to replicate the most recognizable cultivar blends with bold, unmistakable character.</p>
+        </div>
+        <div class="line-footer">
+          <span class="line-sku">Flower-Inspired · Bulk Available</span>    
+        </div>
+      </div>
+
+      <div class="line-card line-sweet reveal reveal-delay-2">
+        <div class="line-header">
+          <span class="line-tag">Line 03</span>
+          <div class="line-name">Sweet</div>
+          <p class="line-desc">One of our most popular lines. Fruit-forward, dessert and candy-inspired formulations that bring a burst of sweetness to any product.</p>
+        </div>
+        <div class="line-footer">
+          <span class="line-sku">Fruit &amp; Dessert · Bulk Available</span>
+        </div>
+      </div>
+
+      <div class="line-card line-classic reveal reveal-delay-3">
+        <div class="line-header">
+          <span class="line-tag">Line 04</span>
+          <div class="line-name">Classic</div>
+          <p class="line-desc">Our original strain-specific terpene line designed for versatility. These botanical terpene blends  capture the timeless flavor of pure strain formulations or with a subtle fruity twist.</p>
+        </div>
+        <div class="line-footer">
+          <span class="line-sku">Strain-Specific · Bulk Available</span>
+        </div>
+      </div>
+
+      <div class="line-custom-heading reveal reveal-delay-4">
+        <h2 class="display-md">Custom Blends</h2>
+        <h3 class="line-custom-title"><em>Create a Signature Terpene Blend That Differentiates Your Brand.</em></h3>
+      </div>
+
+      <div class="line-card line-custom reveal reveal-delay-4">
+        <div class="line-header">
+          <p class="line-desc">Our chemists take great pride in developing proprietary terpene blends for our customers that help their products stand out with consumers. Our collaborative approach begins with understanding your applications and preferences, resulting in a terpene product that stands out across aroma, flavor and sensory effect.</p>
+        </div>
+        <div class="line-footer">
+          <span class="line-sku">Custom Formulation · Bulk Available</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── WHY ─── -->
+  <section id="why">
+    <div class="section-header reveal">
+      <h2 class="display-md">Why<br><em class="brand-text">Loud Spectrum.</em></h2>
+      <p>Terpenes that hit different because they’re built different.</p>
+<p>We engineer every terpene to amplify flavor, aroma, and effect, giving your product a distinct edge consumers can immediately recognize.
+Through rigorous sourcing, precision formulation, and strict quality control, we deliver unmatched consistency at scale, so every batch performs exactly as intended.</p>
+    </div>
+    <div class="why-product-image reveal">
+      <img src="terpene-chart-hero.webp" alt="Loud Spectrum terpene product lineup" loading="lazy">
+    </div>
+    <div class="why-layout">
+      <div class="why-visual reveal">
+        <div class="why-features">
+          <div class="why-feature">
+            <span class="why-num">01</span>
+            <div>
+              <h3>Fully Vertically Integrated</h3>
+              <p>From our farm to your finished product, we own the process. “Alive” terpenes are extracted in-house within 1-hour of harvest through exclusive partnerships with our growers.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <span class="why-num">02</span>
+            <div>
+              <h3>Transparent, Tiered Pricing</h3>
+              <p>The more you order, the lower your per-gram cost. Our volume tiers are built to scale with you. No hidden fees.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <span class="why-num">03</span>
+            <div>
+              <h3>Science-First Quality Standards</h3>
+              <p>Every batch ships with a Certificate of Analysis. Our QA process is built for commercial partners to eliminate risk at scale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-right reveal reveal-delay-1">
+        <div class="why-card why-card-accent">
+          <div class="why-card-label">Account Approval</div>
+          <div class="why-card-value">1–2 Days</div>
+          <div class="why-card-sub">From application to wholesale access</div>
+        </div>
+        <div class="why-card">
+          <div class="why-card-label">Shipping</div>
+          <div class="why-card-value">Global</div>
+          <div class="why-card-sub">International wholesale fulfillment</div>
+        </div>
+        <div class="why-card">
+          <div class="why-card-label">Custom Formulation</div>
+          <div class="why-card-value">Available</div>
+          <div class="why-card-sub">White-label &amp; bespoke formulation development</div>
+        </div>
+        <div class="why-card">
+          <div class="why-card-label">Support</div>
+          <div class="why-card-value">Dedicated</div>
+          <div class="why-card-sub">Technical &amp; account management team</div>
+        </div>
+        <div style="margin-top: 8px;">
+          <a href="#form" class="btn btn-primary" style="width:100%; justify-content:center;">
+            Start Your Application
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FORM ─── -->
+  <section id="form">
+    <div class="form-bg-text">WHOLESALE</div>
+    <div class="form-layout">
+      <div class="form-left reveal">
+        <span class="label label--gold" style="display:block; margin-bottom:20px;">Apply for Wholesale Access</span>
+        <h2 class="display-md" style="margin-bottom:20px;">Let's Create<br><em class="brand-text">Something Together.</em></h2>
+        <p class="form-sub">
+          <strong><a style="color:#fff;" href="tel:8665183777">Call us on 866-518-3777</a></strong> or fill out the form and our wholesale team will review your application within 1–2 business days. Once approved, you'll have direct access to our full catalog with volume pricing applied automatically.
+        </p>
+        <div class="form-perks">
+          <div class="form-perk"><div class="perk-dot"></div>Instant access to 3,000+ SKUs after approval</div>
+          <div class="form-perk"><div class="perk-dot"></div>Volume-tiered pricing — the more you buy, the lower the cost</div>
+          <div class="form-perk"><div class="perk-dot"></div>Dedicated account manager assigned at onboarding</div>
+          <div class="form-perk"><div class="perk-dot"></div>COA provided on every batch, no exceptions</div>
+          <div class="form-perk"><div class="perk-dot"></div>Custom blends development available for partners</div>
+          <div class="form-perk"><div class="perk-dot"></div>Global shipping with streamlined fulfillment</div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <form id="wholesale-form" novalidate>
+          <div class="form-fields">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Jane" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Brand Name *</label>
+              <input type="text" id="company" name="company" placeholder="Acme Extracts LLC" required>
+            </div>
+            <div class="form-group">
+              <label for="website">Company Website</label>
+              <input type="url" id="website" name="website" placeholder="https://yourcompany.com">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Business Email *</label>
+                <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="business-type">Business Type *</label>
+              <select id="business-type" name="business_type" required>
+                <option value="" disabled selected>Select your business type</option>
+                <option>Brand / Consumer Product Company</option>
+                <option>Contract Manufacturer</option>
+                <option>Extraction Facility</option>
+                <option>Ingredient Distributor</option>
+                <option>White Label / Private Label</option>
+                <option>Dispensary / Retailer</option>
+                <option>Research / Lab</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Product Lines of Interest</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label"><input type="checkbox" name="lines" value="alive"> Alive (True-to-Plant)</label>
+                <label class="checkbox-label"><input type="checkbox" name="lines" value="dank"> Dank (Plant-Inspired)</label>
+                <label class="checkbox-label"><input type="checkbox" name="lines" value="sweet"> Sweet (Fruit &amp; Dessert)</label>
+                <label class="checkbox-label"><input type="checkbox" name="lines" value="classic"> Classic (Strain-Specific)</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="volume">Estimated Monthly Volume *</label>
+              <select id="volume" name="monthly_volume" required>
+                <option value="" disabled selected>Select estimated monthly volume</option>
+                <option>Under 500g / month</option>
+                <option>500g – 2kg / month</option>
+                <option>2kg – 10kg / month</option>
+                <option>10kg – 50kg / month</option>
+                <option>50kg+ / month</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="notes">Additional Notes</label>
+              <textarea id="notes" name="notes" placeholder="Tell us about your products, formulation needs, or any custom formulation requirements…"></textarea>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">
+              Submit Wholesale Application
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <p class="form-note">Application reviewed within 1–2 business days · No commitment required</p>
+
+          <div class="form-success" id="form-success">
+            <div class="success-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="rgb(0,174,239)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Application Received</h3>
+            <p>Our wholesale team will review your application and be in touch within 1–2 business days.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─── -->
+  <section class="testimonials">
+    <div class="section-header reveal">
+      <span class="label">Leading the Industry Since 2015</span>
+      <h2 class="display-md">Trusted by Brands<br><em class="brand-text">Formulators & Manufacturers.</em></h2>
+      <p>Verified reviews from customers across the globe.</p>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card featured">
+        <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testimonial-quote">"Loud Spectrum continues to impress me with their innovation and scientific precision. Every product feels a step ahead of the market, and the quality is always incredible. They truly understand the science behind what they do, and it shows in every blend."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Hiro</span>
+          <span class="testimonial-company">Numun Naturals</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card featured">
+        <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testimonial-quote">"Working with this team has been great. They're fast, responsive, and really care about getting every detail right. The blends are always solid, well-balanced, and high-quality."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Jason</span>
+          <span class="testimonial-company">Stratum Brands</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testimonial-quote">"This company is legit. I have been using them for the last few years on the wholesale side. They ship on time and the product is consistent."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Leah</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testimonial-quote">"I've tested just about every terp brand from LA to San Diego and I recommend these Terps to anyone aiming to produce high quality cartridges. A little goes a very long way and the profile on these are next to none!"</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Thomas</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testimonial-quote">"Fantastic product with a rich flavor and was very easy to integrate with various things I wanted to flavor. They reached out just to answer questions or provide info — they care about what they're sending out and that's always a good thing."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Keyano</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testimonial-quote">"Really fast delivery and great customer support. Was surprised to get a call to see if I had any questions — I definitely plan on ordering from them again!"</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Benjamin</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── FAQ ─── -->
+  <section class="faqs">
+    <div class="section-header reveal">
+      <span class="label">FAQ</span>
+      <h2 class="display-md">You’ve got Questions.<br><em class="brand-text">We’ve Got Answers.</em></h2>
+      <p>A few of our frequently asked questions are below. But if you need help with something right away, drop us a line. We’ll help you find solutions to address your specific needs.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-1">Are there wholesale or bulk options available?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-1"><p>Yes. All four product lines — Alive, Classic, Dank, and Sweet — are available in wholesale and bulk quantities. Volume-tiered pricing applies automatically: the more you buy, the lower the price per gram. Apply for a wholesale account to unlock pricing.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-2">Do you have lab tests and COAs for your terpenes?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-2"><p>Yes. All terpene products are third-party tested and come with Certificates of Analysis (COAs). Products are screened for pesticides, heavy metals, and residual solvents, ensuring compliance-ready documentation for your operation.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-3">What are the shipping and handling times?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-3"><p>Orders are handled within 1–3 business days. Shipping via USPS takes 2–4 days; FedEx and UPS Ground take 2–5 days. Alaska and Hawaii orders take 3–5 business days. Expedited options are available on request.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-4">Do you ship internationally?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-4"><p>Yes. International shipping is available and rates vary based on destination and order volume. USPS, FedEx, UPS, and DHL are all available upon request. Contact the team for a shipping quote for your region.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-5">What are the recommended mixing ratios?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-5"><p>Recommended dilution ratios are 1–10% for standard terpenes and 5–15% for Sauce Terps. Due to the potency of our terpenes, always start conservatively and adjust to your formulation needs. Technical support is available for commercial formulators.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-6">How should bulk terpenes be stored?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-6"><p>Store terpene products in a cool, dark place away from direct sunlight and heat. Refrigeration is recommended for long-term storage; freezing is acceptable if needed for extended shelf life. Ensure containers are sealed tightly after each use.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-7">Can we order samples before committing to bulk?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-7"><p>Yes. All terpenes are available as 1ml samples. Sample packs are also offered so you can evaluate them all before placing a bulk order. This is strongly recommended for formulation testing prior to scaling.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-8">What is the returns and refunds policy?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-8"><p>All sales are final due to the consumable nature of terpene products. However, orders that have not yet been fulfilled or shipped are eligible for a full refund. If there is an issue with your order, contact the team immediately and they will work to resolve it.</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-brand">
+      <img src="footer-logo.svg" alt="Loud Spectrum" loading="lazy">
+      <div class="footer-tagline">Premium Terpenes · Wholesale Division</div>
+    </div>
+    <div class="footer-links">
+      <a href="https://loudspectrum.com" target="_blank" rel="noopener">Main Site</a>
+      <a href="https://loudspectrum.com/en/login" target="_blank" rel="noopener">Wholesale Portal</a>
+      <a href="https://loudspectrum.com/en/shop/all" target="_blank" rel="noopener">Products</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Loud Spectrum. All rights reserved.</div>
+  </footer>
+
+
+  <script>
+    // ─── NAV SCROLL ───
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // ─── REVEAL ON SCROLL ───
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
+
+    // ─── COUNTER ANIMATION ───
+    function scaleInfiniteFont(el, value) {
+      const digits = Math.floor(Math.log10(Math.max(value, 1))) + 1;
+      let size;
+      if (digits <= 3)       size = 'clamp(42px, 4.5vw, 70px)';
+      else if (digits <= 5)  size = 'clamp(34px, 3.6vw, 56px)';
+      else if (digits <= 7)  size = 'clamp(24px, 2.6vw, 40px)';
+      else if (digits <= 9)  size = 'clamp(18px, 2vw, 30px)';
+      else if (digits <= 11) size = 'clamp(14px, 1.6vw, 24px)';
+      else                   size = 'clamp(11px, 1.2vw, 18px)';
+      el.style.fontSize = size;
+    }
+
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target);
+      const suffix = el.dataset.suffix || '';
+      const isInfinite = el.dataset.infinite === 'true';
+      const duration = isInfinite ? 3200 : 1800;
+      const start = performance.now();
+      function tick(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        const value = Math.round(ease * target);
+        el.textContent = value.toLocaleString() + suffix;
+        if (isInfinite) scaleInfiniteFont(el, value);
+        if (progress < 1) {
+          requestAnimationFrame(tick);
+        } else if (isInfinite) {
+          let current = target;
+          setInterval(() => {
+            current += Math.floor(Math.random() * 150) + 50;
+            el.textContent = current.toLocaleString() + suffix;
+            scaleInfiniteFont(el, current);
+          }, 300);
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+
+    const statObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && e.target.dataset.target) {
+          animateCounter(e.target);
+          statObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-target]').forEach(el => statObserver.observe(el));
+
+    // ─── GLOWING BORDER EFFECT ───
+    (function() {
+      // Inject glow wrappers into serve cards and line cards
+      document.querySelectorAll('.serve-card, .line-card, .why-card, .testimonial-card').forEach(card => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'glow-wrapper';
+        wrapper.innerHTML = '<div class="glow-inner"></div>';
+        card.prepend(wrapper);
+      });
+
+      const cards = document.querySelectorAll('.serve-card, .line-card, .why-card, .testimonial-card');
+      const animFrames = {};
+
+      const PROXIMITY    = 64;   // matches demo proximity={64}
+      const INACTIVE     = 0.01; // matches demo inactiveZone={0.01}
+      const DURATION     = 800;  // ms — responsive but still smooth
+
+      function shortestAngle(from, to) {
+        return from + (((to - from + 180) % 360) - 180);
+      }
+      // Cubic bezier [0.16, 1, 0.3, 1] via Newton's method
+      function cubicBezier(t) {
+        const p1x = 0.16, p1y = 1.0, p2x = 0.3, p2y = 1.0;
+        let u = t;
+        for (let i = 0; i < 8; i++) {
+          const cx = 3*p1x, bx = 3*(p2x-p1x)-cx, ax = 1-cx-bx;
+          const slope = cx + u*(2*bx + 3*ax*u);
+          if (Math.abs(slope) < 1e-6) break;
+          u -= (((ax*u+bx)*u+cx)*u - t) / slope;
+        }
+        const cy = 3*p1y, by = 3*(p2y-p1y)-cy, ay = 1-cy-by;
+        return ((ay*u+by)*u+cy)*u;
+      }
+
+      document.addEventListener('pointermove', (e) => {
+        cards.forEach((card, i) => {
+          const rect = card.getBoundingClientRect();
+          const cx = rect.left + rect.width * 0.5;
+          const cy = rect.top + rect.height * 0.5;
+          const mx = e.clientX, my = e.clientY;
+
+          const distFromCenter = Math.hypot(mx - cx, my - cy);
+          const inactiveR = 0.5 * Math.min(rect.width, rect.height) * INACTIVE;
+          if (distFromCenter < inactiveR) { card.style.setProperty('--active', '0'); return; }
+
+          const isActive = mx > rect.left - PROXIMITY && mx < rect.right  + PROXIMITY
+                        && my > rect.top  - PROXIMITY && my < rect.bottom + PROXIMITY;
+          card.style.setProperty('--active', isActive ? '1' : '0');
+          if (!isActive) return;
+
+          const targetAngle = (180 * Math.atan2(my - cy, mx - cx)) / Math.PI + 90;
+          const currentAngle = parseFloat(card.style.getPropertyValue('--start')) || 0;
+          const endAngle = shortestAngle(currentAngle, targetAngle);
+
+          if (animFrames[i]) cancelAnimationFrame(animFrames[i]);
+          const t0 = performance.now(), a0 = currentAngle;
+
+          function step(now) {
+            const t = Math.min((now - t0) / DURATION, 1);
+            card.style.setProperty('--start', String(a0 + (endAngle - a0) * cubicBezier(t)));
+            if (t < 1) animFrames[i] = requestAnimationFrame(step);
+          }
+          animFrames[i] = requestAnimationFrame(step);
+        });
+      }, { passive: true });
+    })();
+
+    // ─── SMOOTH ANCHOR SCROLLING ───
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ─── FORM SUBMISSION ───
+    const form = document.getElementById('wholesale-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const required = form.querySelectorAll('[required]');
+      let valid = true;
+      required.forEach(field => {
+        if (!field.value.trim()) {
+          field.style.borderColor = '#c0392b';
+          valid = false;
+          field.addEventListener('input', () => {
+            field.style.borderColor = '';
+          }, { once: true });
+        }
+      });
+      if (!valid) return;
+
+      // Show success state
+      const fields = form.querySelector('.form-fields');
+      const submitArea = form.querySelector('.form-submit');
+      const note = form.querySelector('.form-note');
+      const success = document.getElementById('form-success');
+
+      fields.style.display = 'none';
+      submitArea.style.display = 'none';
+      note.style.display = 'none';
+      success.classList.add('visible');
+    });
+
+  // ─── BACKGROUND PATHS (Who We Serve) ───
+  (function() {
+    var NS = 'http://www.w3.org/2000/svg';
+    var lineColors = ['#22c55e', '#eab308', '#ec4899', '#7c3aed'];
+    function buildPaths(svgEl, position) {
+      for (var i = 0; i < 36; i++) {
+        var mx  = -(380 - i * 5 * position);
+        var my  = -(189 + i * 6);
+        var c2x = -(312 - i * 5 * position);
+        var c2y =  (216 - i * 6);
+        var ex  =  (152 - i * 5 * position);
+        var ey  =  (343 - i * 6);
+        var c3x =  (616 - i * 5 * position);
+        var c3y =  (470 - i * 6);
+        var c4x =  (684 - i * 5 * position);
+        var c4y =  (875 - i * 6);
+        var d = 'M'+mx+' '+my+' C'+mx+' '+my+' '+c2x+' '+c2y+' '+ex+' '+ey+' C'+c3x+' '+c3y+' '+c4x+' '+c4y+' '+c4x+' '+c4y;
+        var path = document.createElementNS(NS, 'path');
+        path.setAttribute('d', d);
+        path.setAttribute('stroke', lineColors[i % 4]);
+        path.setAttribute('stroke-width', (0.5 + i * 0.03).toFixed(2));
+        path.setAttribute('fill', 'none');
+        path.setAttribute('stroke-dasharray', '1200 800');
+        var dur   = (45 + Math.random() * 25).toFixed(1) + 's';
+        var delay = (-Math.random() * 20).toFixed(1) + 's';
+        path.style.animation = 'bgPathFlow ' + dur + ' ' + delay + ' linear infinite, bgPathPulse ' + dur + ' ' + delay + ' ease-in-out infinite';
+        svgEl.appendChild(path);
+      }
+    }
+    var svg1 = document.getElementById('serve-svg-1');
+    var svg2 = document.getElementById('serve-svg-2');
+    var buildAll = function() {
+      if (svg1) buildPaths(svg1, 1);
+      if (svg2) buildPaths(svg2, -1);
+    };
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(buildAll, { timeout: 2000 });
+    } else {
+      setTimeout(buildAll, 200);
+    }
+  })();
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+  </script>
+  <script>
+    window.addEventListener('load', async () => {
+      const { Application } = await import('https://esm.sh/@splinetool/runtime');
+      const canvas = document.getElementById('hero-orb-canvas');
+      const container = canvas.parentElement;
+      function sizeCanvas() {
+        canvas.width = container.clientWidth;
+        canvas.height = container.clientHeight;
+      }
+      sizeCanvas();
+      document.addEventListener('wheel', (e) => {
+        if (e.target === canvas) {
+          e.stopImmediatePropagation();
+        }
+      }, { passive: false, capture: true });
+      const app = new Application(canvas);
+      await app.load('https://prod.spline.design/hHXEkr0EvXk21XI6/scene.splinecode');
+      canvas.style.opacity = '1';
+      container.classList.add('loaded');
+    });
+  </script>
+</body>
+</html>
