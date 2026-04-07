@@ -565,7 +565,7 @@
     }
 
     /* ─── WHO WE SERVE ─── */
-    #serve {
+    #applications {
       padding: var(--section-pad) 40px;
       background: #111921;
       border-top: 1px solid var(--border);
@@ -696,7 +696,7 @@
     }
 
     /* ─── LINES ─── */
-    #lines {
+    #product-lines {
       padding: var(--section-pad) 40px;
       position: relative;
       overflow: hidden;
@@ -822,7 +822,7 @@
     }
 
     /* ─── WHY ─── */
-    #why {
+    #why-loud-spectrum {
       padding: var(--section-pad) 40px;
       background: #111921;
       border-top: 1px solid var(--border);
@@ -936,7 +936,7 @@
     }
 
     /* ─── FORM ─── */
-    #form {
+    #contact {
       padding: var(--section-pad) 40px;
       position: relative;
       overflow: hidden;
@@ -1414,7 +1414,7 @@
         max-width: 100%;
       }
 
-      #hero, #stats, #serve, #lines, #why, #form,
+      #hero, #stats, #applications, #product-lines, #why-loud-spectrum, #contact,
       .testimonials, .faqs { padding-left: 24px; padding-right: 24px; }
       .section-header { margin-bottom: 40px; }
 
@@ -1439,7 +1439,7 @@
       .hero-span { font-size: clamp(13px, 4.5vw, 22px); }
       .display-md { font-size: clamp(22px, 7vw, 30px); }
 
-      #hero, #stats, #serve, #lines, #why, #form,
+      #hero, #stats, #applications, #product-lines, #why-loud-spectrum, #contact,
       .testimonials, .faqs { padding-left: 20px; padding-right: 20px; }
 
       .stats-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1482,16 +1482,16 @@
     /* ─── WHITE SECTIONS VARIANT ─── */
 
     /* Why section — white background */
-    #why {
+    #why-loud-spectrum {
       background: #ffffff;
       border-top: 1px solid rgba(17,25,33,0.1);
     }
-    #why .section-header .display-md,
+    #why-loud-spectrum .section-header .display-md,
     .testimonials .section-header .display-md {
       color: #111921;
     }
-    #why .section-header p,
-    #why .section-header .label {
+    #why-loud-spectrum .section-header p,
+    #why-loud-spectrum .section-header .label {
       color: rgba(17,25,33,0.6);
     }
     .why-feature {
@@ -1565,7 +1565,7 @@
       <img src="logo-light.svg" alt="Loud Spectrum">
       <span class="nav-logo-sub">Wholesale</span>
     </a>
-    <a href="#form" class="btn btn-primary">Apply for Wholesale</a>
+    <a href="#contact" class="btn btn-primary">Apply for Wholesale</a>
   </nav>
 
   <main id="main-content">
@@ -1589,7 +1589,7 @@
         Premium terpenes for brands, formulators, and manufacturers who demand volume without compromise. 3,500+ blends. Tiered pricing. Global shipping.
       </p>
       <div class="hero-actions">
-        <a href="#form" class="btn btn-primary">
+        <a href="#contact" class="btn btn-primary">
           Apply for Wholesale Access
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -1657,7 +1657,7 @@
   </section>
 
   <!-- ─── WHO WE SERVE ─── -->
-  <section id="serve">
+  <section id="applications">
     <div class="serve-bg-paths" aria-hidden="true">
       <svg id="serve-svg-1" class="serve-paths-svg" viewBox="0 0 696 316" fill="none" preserveAspectRatio="xMidYMid slice"></svg>
       <svg id="serve-svg-2" class="serve-paths-svg" viewBox="0 0 696 316" fill="none" preserveAspectRatio="xMidYMid slice"></svg>
@@ -1736,12 +1736,12 @@
       </div>
     </div>
     <div style="text-align:center; margin-top: 48px;">
-      <a href="#form" class="btn btn-primary">Tell us About Your Product <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#contact" class="btn btn-primary">Tell us About Your Product <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </section>
 
   <!-- ─── PRODUCT LINES ─── -->
-  <section id="lines">
+  <section id="product-lines">
     <div class="section-header reveal">
       <span class="label">Product Lines</span>
       <h2 class="display-md">Thousands of Blends.<br><em class="brand-text">Endless Possibilities.</em></h2>
@@ -1794,7 +1794,7 @@
         </div>
       </div>
 
-      <div class="line-custom-heading reveal reveal-delay-4">
+      <div id="custom-blends" class="line-custom-heading reveal reveal-delay-4">
         <h2 class="display-md">Custom Blends</h2>
         <h3 class="line-custom-title"><em>Create a Signature Terpene Blend That Differentiates Your Brand.</em></h3>
       </div>
@@ -1812,7 +1812,7 @@
   </section>
 
   <!-- ─── WHY ─── -->
-  <section id="why">
+  <section id="why-loud-spectrum">
     <div class="section-header reveal">
       <h2 class="display-md">Why<br><em class="brand-text">Loud Spectrum.</em></h2>
       <p>Terpenes that hit different because they’re built different.</p>
@@ -1870,7 +1870,7 @@ Through rigorous sourcing, precision formulation, and strict quality control, we
           <div class="why-card-sub">Technical &amp; account management team</div>
         </div>
         <div style="margin-top: 8px;">
-          <a href="#form" class="btn btn-primary" style="width:100%; justify-content:center;">
+          <a href="#contact" class="btn btn-primary" style="width:100%; justify-content:center;">
             Start Your Application
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -1880,7 +1880,7 @@ Through rigorous sourcing, precision formulation, and strict quality control, we
   </section>
 
   <!-- ─── FORM ─── -->
-  <section id="form">
+  <section id="contact">
     <div class="form-bg-text">WHOLESALE</div>
     <div class="form-layout">
       <div class="form-left reveal">
@@ -1978,7 +1978,7 @@ Through rigorous sourcing, precision formulation, and strict quality control, we
   </section>
 
   <!-- ─── TESTIMONIALS ─── -->
-  <section class="testimonials">
+  <section id="testimonials" class="testimonials">
     <div class="section-header reveal">
       <span class="label">Leading the Industry Since 2015</span>
       <h2 class="display-md">Trusted by Brands<br><em class="brand-text">Formulators & Manufacturers.</em></h2>
