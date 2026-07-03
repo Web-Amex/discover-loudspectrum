@@ -35,13 +35,13 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --black:    #07070A;
-      --surface:  #0F0F12;
-      --card:     #141418;
-      --border:   #242428;
-      --white:    #F4F3EF;
-      --muted:    #9A9AA6;
-      --faint:    #2A2A30;
+      --black:    #F7F1E8;
+      --surface:  #FFFFFF;
+      --card:     #FFFFFF;
+      --border:   #E8E1D2;
+      --white:    #111921;
+      --muted:    rgba(17,25,33,0.62);
+      --faint:    rgba(17,25,33,0.35);
       --cyan:     rgb(0, 174, 239);
       --purple:   rgb(102, 45, 145);
       --alive:    #22c55e;
@@ -54,7 +54,7 @@
       --font-body:    'DM Sans', sans-serif;
       --font-mono:    'DM Mono', monospace;
       --radius: 3px;
-      --section-pad: clamp(80px, 10vw, 140px);
+      --section-pad: clamp(64px, 8vw, 110px);
     }
 
     html { scroll-behavior: smooth; }
@@ -181,7 +181,7 @@
       background: transparent;
       color: var(--white);
       padding: 15px 36px;
-      border: 1px solid rgba(255,255,255,0.2);
+      border: 1px solid rgba(17,25,33,0.2);
       border-radius: 100px;
       transition: border-color 0.35s ease, color 0.35s ease, transform 0.35s ease;
     }
@@ -227,7 +227,7 @@
       border-bottom: 1px solid transparent;
     }
     nav.scrolled {
-      background: rgba(7,7,10,0.95);
+      background: rgba(247,241,232,0.95);
       backdrop-filter: blur(12px);
       border-bottom-color: var(--border);
     }
@@ -242,6 +242,7 @@
       width: auto;
       display: block;
       margin-bottom: 8px;
+      filter: invert(1) hue-rotate(180deg);
     }
     .nav-logo-sub {
       font-family: var(--font-mono);
@@ -324,8 +325,8 @@
       position: absolute;
       inset: 0;
       background-image:
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+        linear-gradient(rgba(17,25,33,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(17,25,33,0.025) 1px, transparent 1px);
       background-size: 60px 60px;
       mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
     }
@@ -338,7 +339,7 @@
       font-size: clamp(180px, 22vw, 340px);
       font-weight: 300;
       color: transparent;
-      -webkit-text-stroke: 1px rgba(255,255,255,0.035);
+      -webkit-text-stroke: 1px rgba(17,25,33,0.035);
       line-height: 1;
       pointer-events: none;
       user-select: none;
@@ -379,7 +380,7 @@
     .hero-sub {
       font-size: clamp(16px, 1.5vw, 20px);
       font-weight: 300;
-      color: rgba(244,243,239,0.82);
+      color: rgba(17,25,33,0.82);
       max-width: 38vw;
       line-height: 1.7;
       opacity: 0;
@@ -549,7 +550,7 @@
     .stat-label {
       font-size: 17px;
       font-weight: 300;
-      color: rgba(244,243,239,0.85);
+      color: rgba(17,25,33,0.85);
       margin-bottom: 8px;
     }
     .stat-sub {
@@ -567,7 +568,7 @@
     .section-header .label { margin-bottom: 20px; display: block; }
     .section-header p {
       font-size: clamp(15px, 1.3vw, 18px);
-      color: rgba(244,243,239,0.75);
+      color: rgba(17,25,33,0.75);
       line-height: 1.7;
       margin-top: 16px;
     }
@@ -575,7 +576,7 @@
     /* ─── WHO WE SERVE ─── */
     #applications {
       padding: var(--section-pad) 40px;
-      background: #111921;
+      background: var(--black);
       border-top: 1px solid var(--border);
       position: relative;
       overflow: hidden;
@@ -757,7 +758,7 @@
     }
     .line-desc {
       font-size: 16px;
-      color: rgba(244,243,239,0.72);
+      color: rgba(17,25,33,0.72);
       line-height: 1.6;
     }
     .line-footer {
@@ -832,7 +833,7 @@
     /* ─── WHY ─── */
     #why-loud-spectrum {
       padding: var(--section-pad) 40px;
-      background: #111921;
+      background: var(--black);
       border-top: 1px solid var(--border);
     }
     .why-product-image {
@@ -958,7 +959,7 @@
       font-size: clamp(120px, 16vw, 240px);
       font-weight: 300;
       color: transparent;
-      -webkit-text-stroke: 1px rgba(255,255,255,0.025);
+      -webkit-text-stroke: 1px rgba(17,25,33,0.025);
       pointer-events: none;
       user-select: none;
       letter-spacing: -0.04em;
@@ -982,7 +983,7 @@
     }
     .form-left .form-sub {
       font-size: 16px;
-      color: rgba(244,243,239,0.72);
+      color: rgba(17,25,33,0.72);
       line-height: 1.7;
       margin-bottom: 40px;
     }
@@ -996,7 +997,7 @@
       align-items: center;
       gap: 14px;
       font-size: 16px;
-      color: rgba(244,243,239,0.82);
+      color: rgba(17,25,33,0.82);
     }
     .perk-dot {
       width: 6px;
@@ -1076,7 +1077,7 @@
       gap: 10px;
       font-family: var(--font-body);
       font-size: 13px;
-      color: rgba(244,243,239,0.82);
+      color: rgba(17,25,33,0.82);
       cursor: pointer;
       text-transform: scale(1.8) translateX(-23%) translateY(20%);
       letter-spacing: 0;
@@ -1145,7 +1146,7 @@
     /* ─── TESTIMONIALS ─── */
     .testimonials {
       padding: 120px 40px;
-      background: #111921;
+      background: var(--black);
       border-top: 1px solid var(--border);
       overflow: hidden;
     }
@@ -1191,7 +1192,7 @@
       font-family: var(--font-sans);
       font-size: 15px;
       line-height: 1.7;
-      color: rgba(245,245,245,0.82);
+      color: rgba(17,25,33,0.82);
       flex: 1;
     }
     .testimonial-author {
@@ -1252,7 +1253,7 @@
       gap: 24px;
       transition: color 0.3s ease;
     }
-    .faq-q:hover { color: rgba(245,245,245,0.7); }
+    .faq-q:hover { color: rgba(17,25,33,0.7); }
     .faq-icon {
       flex-shrink: 0;
       width: 28px;
@@ -1285,7 +1286,7 @@
       font-family: var(--font-mono);
       font-size: 15px;
       line-height: 1.9;
-      color: rgba(245,245,245,0.6);
+      color: rgba(17,25,33,0.6);
       max-width: 680px;
       padding-bottom: 28px;
     }
@@ -1311,6 +1312,7 @@
       width: auto;
       display: block;
       opacity: 0.9;
+      filter: invert(1) hue-rotate(180deg);
     }
     .footer-tagline {
       font-family: var(--font-mono);
@@ -1562,6 +1564,58 @@
     }
 
   </style>
+<style id="hero-prod-style">
+  #hero{padding-left:clamp(56px,5.5vw,112px);}
+  @media (min-width:769px){#hero{padding-top:108px;}}
+  #hero .hero-content{max-width:40vw;}
+  #hero .hero-headline{max-width:40vw;}
+  .hero-trust{list-style:none;padding:0;margin:24px 0 40px;display:flex;flex-direction:column;gap:13px;opacity:0;transform:translateY(20px);animation:fadeUp .7s ease .7s forwards;}
+  .hero-trust li{display:flex;align-items:center;gap:13px;font-size:15px;line-height:1.4;color:rgba(17,25,33,.8);font-weight:300;}
+  .hero-trust li strong{color:#111921;font-weight:600;}
+  .hero-trust li::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--brand-grad);box-shadow:0 0 10px rgba(124,58,237,.55);flex-shrink:0;}
+  .hero-slideshow{position:absolute;right:0;top:0;width:52%;height:100%;overflow:hidden;z-index:1;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 42%,#000 100%);mask-image:linear-gradient(to right,transparent 0%,#000 42%,#000 100%);}
+  .hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s ease-in-out;}
+  .hero-slide.is-active{opacity:1;}
+</style>
+<style id="types-prod-style">
+  #terpene-types{padding:var(--section-pad) 40px;position:relative;}
+  #terpene-types .type-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;max-width:1200px;margin:0 auto;}
+  #terpene-types .type-card{flex:0 0 calc((100% - 48px)/4);box-sizing:border-box;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px 26px;transition:transform .35s ease,border-color .35s ease;}
+  #terpene-types .type-card:hover{transform:translateY(-6px);border-color:var(--faint);}
+  #terpene-types .type-name{font-family:var(--font-display);font-weight:400;font-size:21px;line-height:1.25;margin:0 0 10px;}
+  #terpene-types .type-card p{font-size:15px;color:rgba(17,25,33,.72);line-height:1.6;margin:0;}
+  @media (max-width:1024px){#terpene-types .type-card{flex:0 0 calc((100% - 16px)/2);}}
+  @media (max-width:600px){#terpene-types .type-card{flex:0 0 100%;}}
+</style>
+<style id="mobile-prod-style">
+@media (max-width:768px){
+  #hero{min-height:auto;display:flex;flex-direction:column;justify-content:flex-start;padding:66px 0 48px;}
+  #hero .hero-slideshow{position:relative;order:-1;width:100%;height:auto;aspect-ratio:1.48;margin:0 0 30px;-webkit-mask-image:linear-gradient(to bottom,#000 58%,transparent 100%);mask-image:linear-gradient(to bottom,#000 58%,transparent 100%);}
+  #hero .hero-content{order:1;max-width:100%;padding:0 24px;}
+  #hero .hero-headline{max-width:100%;}
+  #hero .hero-span{font-size:clamp(17px,5vw,24px);}
+  nav{padding-bottom:12px;}
+  .nav-logo img{height:35px;margin-bottom:0;}
+  #hero .hero-slide{background-position:center;}
+  #hero .hero-slideshow .hero-slide:nth-child(1){background-image:url('hero-images/h1.webp') !important;}
+  #hero .hero-slideshow .hero-slide:nth-child(2){background-image:url('hero-images/h2.webp') !important;}
+  #hero .hero-slideshow .hero-slide:nth-child(3){background-image:url('hero-images/h3.webp') !important;}
+}
+</style>
+<style id="stats-mobile-fix">
+@media (max-width:768px){
+  #stats .stat-cell{padding:34px 28px;overflow:visible;}
+  #stats .stat-number{font-size:clamp(32px,6vw,46px);height:auto;}
+}
+@media (max-width:560px){
+  #stats .stats-grid{grid-template-columns:1fr;}
+  #stats .stat-cell{padding:30px 26px;}
+  #stats .stat-number{font-size:clamp(40px,11vw,54px);}
+}
+</style>
+<style id="light-fixes">
+  .line-alive .line-desc,.line-dank .line-desc,.line-sweet .line-desc,.line-classic .line-desc,.line-custom .line-desc{color:rgba(247,241,232,0.85);}
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -1573,7 +1627,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- ─── NAV ─── -->
   <nav id="nav">
-    <a href="https://loudspectrum.com" target="_blank" rel="noopener" class="nav-logo">
+    <a href="https://loudspectrum.com/en/wholesale-bulk-terpenes" target="_blank" rel="noopener" class="nav-logo">
       <img src="logo-light.svg" alt="Loud Spectrum">
       <span class="nav-logo-sub">Wholesale</span>
     </a>
@@ -1593,13 +1647,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="label label--gold">Wholesale &amp; Bulk Terpenes</span>
       </div>
       <h1 class="display-xl hero-headline">
-       Craft Products Your Competitors<br>Only Wish They Made. 
+       Brand Defining Terpene Flavors That Set You Apart 
       </h1>
-       <span class="hero-span"><em class="brand-text">Give your customers a terpene experience<br>they'll keep coming back for.</em>
+       <span class="hero-span"><em class="brand-text">See why 15,000+ businesses have chosen Loud Spectrum</em>
       </span>
-      <p class="hero-sub">
-        Premium terpenes for brands, formulators, and manufacturers who demand volume without compromise. 3,500+ blends. Tiered pricing. Global shipping.
-      </p>
+      <ul class="hero-trust">
+        <li><strong>GMP Certified</strong> · Over 10 years of experience</li>
+        <li><strong>Custom IP</strong> · Build your own proprietary blend</li>
+        <li><strong>In-house LCMS/MS Tested</strong></li>
+      </ul>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">
           Free Sample Packs
@@ -1609,8 +1665,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <div class="hero-orb" aria-hidden="true">
-      <canvas id="hero-orb-canvas"></canvas>
+    <div class="hero-slideshow" aria-hidden="true">
+      <div class="hero-slide is-active" style="background-image:url('hero-images/hero1.webp')"></div>
+      <div class="hero-slide" style="background-image:url('hero-images/hero2.webp')"></div>
+      <div class="hero-slide" style="background-image:url('hero-images/hero3.webp')"></div>
     </div>
 
     <div class="hero-scroll">
@@ -1623,7 +1681,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="strip">
     <div class="strip-inner">
       <div class="strip-item"><div class="strip-dot"></div>3,500+ Unique blends</div>
-      <div class="strip-item"><div class="strip-dot"></div>Tiered Volume Pricing</div>
+      <div class="strip-item"><div class="strip-dot"></div>Bulk Pricing From $0.78/g</div>
       <div class="strip-item"><div class="strip-dot"></div>Global Shipping</div>
       <div class="strip-item"><div class="strip-dot"></div>White Label Solutions</div>
       <div class="strip-item"><div class="strip-dot"></div>COA on Every Batch</div>
@@ -1632,7 +1690,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="strip-item"><div class="strip-dot"></div>Custom Blends Available</div>
       <!-- duplicate for seamless loop -->
       <div class="strip-item"><div class="strip-dot"></div>3,500+ Unique blends</div>
-      <div class="strip-item"><div class="strip-dot"></div>Tiered Volume Pricing</div>
+      <div class="strip-item"><div class="strip-dot"></div>Bulk Pricing From $0.78/g</div>
       <div class="strip-item"><div class="strip-dot"></div>Global Shipping</div>
       <div class="strip-item"><div class="strip-dot"></div>White Label Solutions</div>
       <div class="strip-item"><div class="strip-dot"></div>COA on Every Batch</div>
@@ -1686,7 +1744,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <path d="M21 34 C25 30 17 26 21 22 C25 18 17 14 21 10" stroke="rgb(102,45,145)" stroke-width="1.2" stroke-linecap="round" fill="none"/>
           <path d="M28 34 C24 30 32 26 28 22 C24 18 32 14 28 10" stroke="rgb(0,174,239)" stroke-width="1.2" stroke-linecap="round" fill="none"/>
         </svg>
-        <h3>Distillate</h3>
+        <h3>Terpenes for Distillate</h3>
         <p>Precision-tested terpene blends crafted to deliver a clean, consistent, flower-like experience every time.</p>
       </div>
       <div class="serve-card reveal reveal-delay-1">
@@ -1746,9 +1804,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3>Topicals</h3>
         <p>Carefully formulated terpenes enhance balms, creams, and lotions with natural aroma and dermal compatibility.</p>
       </div>
+      <div class="serve-card reveal"><svg class="serve-icon" viewBox="0 0 42 42" fill="none"><path d="M14 34 C10 30 18 26 14 22 C10 18 18 14 14 10" stroke="rgb(0,174,239)" stroke-width="1.2" stroke-linecap="round" fill="none"/><path d="M21 34 C25 30 17 26 21 22 C25 18 17 14 21 10" stroke="rgb(102,45,145)" stroke-width="1.2" stroke-linecap="round" fill="none"/><path d="M28 34 C24 30 32 26 28 22 C24 18 32 14 28 10" stroke="rgb(0,174,239)" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg>
+        <h3>Terpenes for Concentrates</h3>
+        <p>High-impact terpenes for concentrate, sauce, and diamond formulations.</p>
+      </div>
+      <div class="serve-card reveal"><svg class="serve-icon" viewBox="0 0 42 42" fill="none"><path d="M14 34 C10 30 18 26 14 22 C10 18 18 14 14 10" stroke="rgb(0,174,239)" stroke-width="1.2" stroke-linecap="round" fill="none"/><path d="M21 34 C25 30 17 26 21 22 C25 18 17 14 21 10" stroke="rgb(102,45,145)" stroke-width="1.2" stroke-linecap="round" fill="none"/><path d="M28 34 C24 30 32 26 28 22 C24 18 32 14 28 10" stroke="rgb(0,174,239)" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg>
+        <h3>Terpenes for Carts</h3>
+        <p>Cartridge-ready terpene blends formulated for smooth, flavorful pulls.</p>
+      </div>
+      <div class="serve-card reveal"><svg class="serve-icon" viewBox="0 0 42 42" fill="none"><path d="M14 34 C10 30 18 26 14 22 C10 18 18 14 14 10" stroke="rgb(0,174,239)" stroke-width="1.2" stroke-linecap="round" fill="none"/><path d="M21 34 C25 30 17 26 21 22 C25 18 17 14 21 10" stroke="rgb(102,45,145)" stroke-width="1.2" stroke-linecap="round" fill="none"/><path d="M28 34 C24 30 32 26 28 22 C24 18 32 14 28 10" stroke="rgb(0,174,239)" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg>
+        <h3>Food-Grade Terpenes</h3>
+        <p>Food-grade terpenes for ingestible and beverage formulations.</p>
+      </div>
     </div>
     <div style="text-align:center; margin-top: 48px;">
       <a href="#contact" class="btn btn-primary">Tell us About Your Product <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </section>
+
+  <!-- ─── TERPENE TYPES ─── -->
+  <section id="terpene-types">
+    <div class="section-header reveal">
+      <span class="label">Terpene Types</span>
+      <h2 class="display-md">Every Terpene Type<br><em class="brand-text">Your Formulation Calls For.</em></h2>
+      <p>From bold terpene flavoring and aroma enhancers to clean, flavorless carriers — across every terpene type brands ask for.</p>
+    </div>
+    <div class="type-grid">
+      <div class="type-card reveal"><h3 class="type-name">CDT — Cannabis-Derived Terpenes</h3><p>True-to-plant fidelity for the most authentic aroma, flavor, and effect.</p></div>
+      <div class="type-card reveal"><h3 class="type-name">Botanical / Plant-Derived Terpenes</h3><p>Versatile botanical terpene blends across the full flavor spectrum.</p></div>
+      <div class="type-card reveal"><h3 class="type-name">Hemp &amp; Hemp-Derived Terpenes</h3><p>Compliant, consistent hemp-sourced terpene options at scale.</p></div>
+      <div class="type-card reveal"><h3 class="type-name">Organic &amp; Natural Terpenes</h3><p>Naturally-derived, clean-label terpenes for authentic character.</p></div>
+      <div class="type-card reveal"><h3 class="type-name">Live Terpenes</h3><p>Extracted in-house within an hour of harvest for peak fidelity.</p></div>
+      <div class="type-card reveal"><h3 class="type-name">Pure Terpenes &amp; Isolates</h3><p>Single-component and pure terpenes for precise formulation control.</p></div>
+      <div class="type-card reveal"><h3 class="type-name">High-Terpene Extract (HTE)</h3><p>Concentrated, full-character terpene extracts for maximum impact.</p></div>
     </div>
   </section>
 
@@ -1828,6 +1916,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="section-header reveal">
       <h2 class="display-md">Why<br><em class="brand-text">Loud Spectrum.</em></h2>
       <p>Terpenes that hit different because they’re built different.</p>
+      <p>A trusted wholesale terpene supplier and manufacturer to brands, formulators, and product companies worldwide.</p>
 <p>We engineer every terpene to amplify flavor, aroma, and effect, giving your product a distinct edge consumers can immediately recognize.
 Through rigorous sourcing, precision formulation, and strict quality control, we deliver unmatched consistency at scale, so every batch performs exactly as intended.</p>
     </div>
@@ -1899,11 +1988,12 @@ Through rigorous sourcing, precision formulation, and strict quality control, we
         <span class="label label--gold" style="display:block; margin-bottom:20px;">Apply for Wholesale Access</span>
         <h2 class="display-md" style="margin-bottom:20px;">Let's Create<br><em class="brand-text">Something Together.</em></h2>
         <p class="form-sub">
-          <strong><a style="color:#fff;" href="tel:7149059681">Call us on 714-905-9681</a></strong> or fill out the form and our wholesale team will review your application within 1–2 business days. Once approved, you'll have direct access to our full catalog with volume pricing applied automatically.
+          <strong><a style="color:#00AEEF;" href="tel:7149059681">Call us on 714-905-9681</a></strong> or fill out the form and our wholesale team will review your application within 1–2 business days. Once approved, you'll have direct access to our full catalog with volume pricing applied automatically.
         </p>
         <div class="form-perks">
           <div class="form-perk"><div class="perk-dot"></div>Instant access to 3,000+ SKUs after approval</div>
           <div class="form-perk"><div class="perk-dot"></div>Volume-tiered pricing — the more you buy, the lower the cost</div>
+          <div class="form-perk"><div class="perk-dot"></div>Buy wholesale terpenes from $0.78 / gram — full volume tiers unlocked on approval</div>
           <div class="form-perk"><div class="perk-dot"></div>Dedicated account manager assigned at onboarding</div>
           <div class="form-perk"><div class="perk-dot"></div>COA provided on every batch, no exceptions</div>
           <div class="form-perk"><div class="perk-dot"></div>Custom blends development available for partners</div>
@@ -1953,9 +2043,9 @@ Through rigorous sourcing, precision formulation, and strict quality control, we
               </div>
             </div>
             <div class="form-group">
-              <label for="estimated_monthly_volume">Estimated Monthly Volume *</label>
-              <select id="estimated_monthly_volume" name="estimated_monthly_volume" required>
-                <option value="" disabled selected>Select estimated monthly volume</option>
+              <label for="estimated_monthly_volume">Estimated Monthly Volume (Optional)</label>
+              <select id="estimated_monthly_volume" name="estimated_monthly_volume">
+                <option value="" selected>Select estimated monthly volume (optional)</option>
                 <option>Under 500g / month</option>
                 <option>500g – 2kg / month</option>
                 <option>2kg – 10kg / month</option>
@@ -2113,7 +2203,7 @@ Through rigorous sourcing, precision formulation, and strict quality control, we
     </div>
     <div class="footer-links">
       <a href="https://loudspectrum.com" target="_blank" rel="noopener">Main Site</a>
-      <a href="https://loudspectrum.com/en/login" target="_blank" rel="noopener">Wholesale Portal</a>
+      <a href="https://loudspectrum.com/en/wholesale-bulk-terpenes" target="_blank" rel="noopener">Wholesale Portal</a>
       <a href="https://loudspectrum.com/en/shop/all" target="_blank" rel="noopener">Products</a>
     </div>
     <div class="footer-links">
@@ -2395,25 +2485,10 @@ Through rigorous sourcing, precision formulation, and strict quality control, we
   });
   </script>
   <script>
-    window.addEventListener('load', async () => {
-      const { Application } = await import('https://esm.sh/@splinetool/runtime');
-      const canvas = document.getElementById('hero-orb-canvas');
-      const container = canvas.parentElement;
-      function sizeCanvas() {
-        canvas.width = container.clientWidth;
-        canvas.height = container.clientHeight;
-      }
-      sizeCanvas();
-      document.addEventListener('wheel', (e) => {
-        if (e.target === canvas) {
-          e.stopImmediatePropagation();
-        }
-      }, { passive: false, capture: true });
-      const app = new Application(canvas);
-      await app.load('https://prod.spline.design/hHXEkr0EvXk21XI6/scene.splinecode');
-      canvas.style.opacity = '1';
-      container.classList.add('loaded');
-    });
+    (function(){
+      var s=document.querySelectorAll('.hero-slide'); if(s.length<2) return;
+      var i=0; setInterval(function(){ s[i].classList.remove('is-active'); i=(i+1)%s.length; s[i].classList.add('is-active'); },5000);
+    })();
   </script>
 </body>
 </html>
