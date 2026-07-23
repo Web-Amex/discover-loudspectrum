@@ -24,8 +24,6 @@
   <link rel="icon" href="favicon.ico" sizes="48x48" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://esm.sh">
-  <link rel="preconnect" href="https://prod.spline.design">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/ysg7edw.css">
 
@@ -1627,7 +1625,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- ─── NAV ─── -->
   <nav id="nav">
-    <a href="https://loudspectrum.com/en/wholesale-bulk-terpenes" target="_blank" rel="noopener" class="nav-logo">
+    <a href="https://loudspectrum.com" target="_blank" rel="noopener" class="nav-logo">
       <img src="logo-light.svg" alt="Loud Spectrum">
       <span class="nav-logo-sub">Wholesale</span>
     </a>
@@ -1652,9 +1650,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        <span class="hero-span"><em class="brand-text">See why 15,000+ businesses have chosen Loud Spectrum</em>
       </span>
       <ul class="hero-trust">
-        <li><strong>GMP Certified</strong> · Over 10 years of experience</li>
-        <li><strong>Custom IP</strong> · Build your own proprietary blend</li>
-        <li><strong>In-house LCMS/MS Tested</strong></li>
+        <li><span><strong>Wholesale Terpenes from $0.78 / gram</strong></span></li>
+        <li><span><strong>GMP Certified</strong> · Over 10 years of experience</span></li>
+        <li><span><strong>Custom IP</strong> · Build your own proprietary blend</span></li>
+        <li><span><strong>In-house LCMS/MS Tested</strong></span></li>
       </ul>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">
@@ -2203,7 +2202,7 @@ Through rigorous sourcing, precision formulation, and strict quality control, we
     </div>
     <div class="footer-links">
       <a href="https://loudspectrum.com" target="_blank" rel="noopener">Main Site</a>
-      <a href="https://loudspectrum.com/en/wholesale-bulk-terpenes" target="_blank" rel="noopener">Wholesale Portal</a>
+      <a href="https://loudspectrum.com/en/login" target="_blank" rel="noopener">Wholesale Portal</a>
       <a href="https://loudspectrum.com/en/shop/all" target="_blank" rel="noopener">Products</a>
     </div>
     <div class="footer-links">
@@ -2402,14 +2401,14 @@ Through rigorous sourcing, precision formulation, and strict quality control, we
       ctmBody.append('phone_number', '+1' + document.getElementById('phone').value.replace(/\D/g, ''));
       ctmBody.append('caller_name', (firstName + ' ' + lastName).trim());
       ctmBody.append('email', document.getElementById('email').value.trim());
-      ctmBody.append('custom_fields[companybrand_name]', document.getElementById('companybrand_name').value.trim());
+      ctmBody.append('custom_fields[companybrand_name]', document.getElementById('companybrand_name').value.trim() || 'Not specified');
       let website = document.getElementById('company_website').value.trim();
       if (website && !/^https?:\/\//i.test(website)) website = 'https://' + website;
       ctmBody.append('custom_fields[company_website]', website);
       ctmBody.append('custom_fields[product_lines_interested_in]', checked.join(', '));
-      ctmBody.append('custom_fields[estimated_monthly_volume]', document.getElementById('estimated_monthly_volume').value);
+      ctmBody.append('custom_fields[estimated_monthly_volume]', document.getElementById('estimated_monthly_volume').value || 'Not specified');
       ctmBody.append('custom_fields[additional_notes]', document.getElementById('additional_notes').value.trim());
-      fetch('https://api.calltrackingmetrics.com/api/v1/formreactor/FRT472ABB2C5B9B141A29ABBC03794EC2431505B91A8A7A056ED2DA2891D31DA72D?key=9kcuJVYbTw4XE3Xd_vU0GWBLvIrUeFfme9aiyVTMcsy8DzcE', {
+      fetch('https://api.calltrackingmetrics.com/api/v1/formreactor/FRT472ABB2C5B9B141A29ABBC03794EC2431505B91A8A7A056ED2DA2891D31DA72D?key=9kcuJVYbTw4XE3Xd_vU0GWBLvlrUeFfme9aiyVTMcsy8DzcE', {
         method: 'POST',
         body: ctmBody
       }).then(r => console.log('CTM response:', r.status)).catch(e => console.error('CTM error:', e));
